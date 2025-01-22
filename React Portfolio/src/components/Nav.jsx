@@ -8,6 +8,9 @@ function Nav() {
   return (
     <div style={styles.nav} className="nav-scroller py-1 mb-3 border-bottom">
       <nav className="nav nav-underline justify-content-between">
+        <a className="nave-item nav-link link-body-emphasis" href="/">
+          Alexander Mena
+        </a>
         <a className="nave-item nav-link link-body-emphasis" href="/aboutme">
           About Me
         </a>
