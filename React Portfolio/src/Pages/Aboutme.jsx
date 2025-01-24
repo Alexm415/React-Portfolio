@@ -1,8 +1,9 @@
 import me from "../../../images/Hugs.jpeg";
 const styles = {
   pic: {
-    width: 500,
+    width: 350,
     height: 500,
+    borderRadius: 100,
   },
 };
 function Aboutme() {

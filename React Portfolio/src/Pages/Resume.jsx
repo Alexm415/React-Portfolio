@@ -25,7 +25,8 @@ export default function Resume() {
             <ul>
               <li>NodeJs</li>
               <li>Express Server</li>
-              <li>mySql and PostSQL</li>
+              <li>mySql</li>
+              <li>PostSQL</li>
               <li>MongoDb</li>
               <li>GraphQl</li>
             </ul>

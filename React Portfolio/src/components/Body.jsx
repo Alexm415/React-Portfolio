@@ -2,10 +2,9 @@ import Me from "../../../images/me.jpeg";
 
 const styles = {
   pic: {
-    width: 500,
+    width: 300,
     height: 500,
-    borderRadius: 150,
-    margin: "20px",
+    borderRadius: 100,
   },
   profileImg: {
     height: 300,
@@ -47,8 +46,6 @@ function Body() {
           <div className="col-md-5 order-md-1">
             <img
               className="featurette-image img-fluid mx-auto"
-              data-src="holder.js/500x500/auto"
-              alt="500x500"
               style={styles.pic}
               src={Me}
               data-holder-rendered="true"
