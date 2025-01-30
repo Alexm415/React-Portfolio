@@ -1,9 +1,9 @@
-import Me from "../../../images/me.jpeg";
+import Me from "../../../images/me.png";
 
 const styles = {
   pic: {
-    width: 300,
-    height: 500,
+    width: 450,
+    height: 400,
     borderRadius: 100,
   },
   profileImg: {
