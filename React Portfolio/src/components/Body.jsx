@@ -1,10 +1,11 @@
 import Me from "../../../images/me.png";
+import { Link } from "react-router-dom";
 
 const styles = {
   pic: {
-    width: 450,
+    width: 500,
     height: 400,
-    borderRadius: 100,
+    borderRadius: 175,
   },
   profileImg: {
     height: 300,
