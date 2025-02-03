@@ -38,9 +38,9 @@ function Body() {
               I am a full stack developer, from San Francisco. 😎
             </p>
             <p className="lead mb-0">
-              <a href="/aboutme" className="text-body-emphasis fw-bold">
+              <Link href="/aboutme" className="text-body-emphasis fw-bold">
                 Continue reading about me...
-              </a>
+              </Link>
             </p>
           </div>
           <div className="col-md-5 order-md-1">
