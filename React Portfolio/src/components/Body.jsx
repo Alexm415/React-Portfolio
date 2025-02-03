@@ -38,7 +38,11 @@ function Body() {
               I am a full stack developer, from San Francisco. 😎
             </p>
             <p className="lead mb-0">
-              <Link href="/aboutme" className="text-body-emphasis fw-bold">
+              <Link
+                href="/aboutme"
+                to="/aboutme"
+                className="text-body-emphasis fw-bold"
+              >
                 Continue reading about me...
               </Link>
             </p>
