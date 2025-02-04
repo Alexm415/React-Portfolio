@@ -2,11 +2,21 @@ import img0 from "../../images/Front-images/4.jpeg";
 import img1 from "../../images/Front-images/1.jpeg";
 import img2 from "../../images/Front-images/2.jpeg";
 import img3 from "../../images/Front-images/3.jpeg";
-
+import img4 from "../../images/Front-images/5.jpeg";
+import img5 from "../../images/Front-images/6.jpeg";
 const projects = [
   {
     id: 0,
-    title: "NewsHub",
+    title: "Vibez Music App",
+    image: img4,
+    date: "Jan 30th 2025",
+    content:
+      "This group project we learned the power of the mongo data base. We also learned how to implemnt react in our project, how to get data from the data base in real time and pull data back so the user can see there saved songs.",
+    link: "https://github.com/Alexm415/vibez-tune-music-app",
+  },
+  {
+    id: 1,
+    title: "News Hub",
     image: img0,
     date: "Nov 25th 2024",
     content:
@@ -14,13 +24,22 @@ const projects = [
     link: "https://github.com/Alexm415/NewsHub",
   },
   {
-    id: 1,
+    id: 2,
     title: "NetLu",
     image: img1,
     date: "Sep 24th 2024",
     content:
       "This group project we learned the power of APIs. How much data can be passed throught one link is amazing, using the json file to make content!",
     link: "https://github.com/Alexm415/NetLu",
+  },
+  {
+    id: 3,
+    title: "Portfolio",
+    image: img5,
+    date: "Jan 24th 2025",
+    content:
+      "This is where i show off my work and show how i learned to use react and add data i have saved in a seprate file and is maped out for you. ",
+    link: "https://github.com/Alexm415/React-Portfolio",
   },
 ];
 const otherAssignments = [
