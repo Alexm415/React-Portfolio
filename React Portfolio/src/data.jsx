@@ -8,6 +8,8 @@ const projects = [
   {
     id: 0,
     title: "Vibez Music App",
+    kind: "Group project",
+    tags: ["React", "MongoDB"],
     image: img4,
     date: "Jan 30th 2025",
     content:
@@ -17,6 +19,8 @@ const projects = [
   {
     id: 1,
     title: "News Hub",
+    kind: "Group project",
+    tags: ["Accounts", "Ratings & comments", "Search"],
     image: img0,
     date: "Nov 25th 2024",
     content:
@@ -26,6 +30,8 @@ const projects = [
   {
     id: 2,
     title: "NetLu",
+    kind: "Group project",
+    tags: ["APIs", "JSON"],
     image: img1,
     date: "Sep 24th 2024",
     content:
@@ -35,6 +41,8 @@ const projects = [
   {
     id: 3,
     title: "Portfolio",
+    kind: "Personal",
+    tags: ["React", "Vite"],
     image: img5,
     date: "Jan 24th 2025",
     content:
@@ -46,6 +54,8 @@ const otherAssignments = [
   {
     id: 0,
     title: "TechBlogSpot",
+    kind: "Assignment",
+    tags: ["Handlebars", "Database", "User profiles"],
     image: img2,
     date: "Dec 3rd 2024",
     content:
@@ -55,6 +65,8 @@ const otherAssignments = [
   {
     id: 1,
     title: "ReadMe Maker",
+    kind: "Assignment",
+    tags: ["Node.js", "CLI"],
     image: img3,
     date: "Oct 8th 2024",
     content:
@@ -67,6 +79,8 @@ const moreRepos = [
   {
     id: 0,
     title: "Social-Network-API",
+    kind: "Repo",
+    tags: ["MongoDB", "API"],
     content:
       "An API that lets you add users to a MongoDB database and see their thoughts and friends list.",
     link: "https://github.com/Alexm415/Social-Network-API",
@@ -74,6 +88,8 @@ const moreRepos = [
   {
     id: 1,
     title: "PWA-Text-Editor",
+    kind: "Repo",
+    tags: ["PWA", "Offline"],
     content:
       "A text editor that runs in the browser and can be installed for offline use.",
     link: "https://github.com/Alexm415/PWA-Text-Editor",
@@ -81,6 +97,8 @@ const moreRepos = [
   {
     id: 2,
     title: "E-comBackend",
+    kind: "Repo",
+    tags: ["Express", "PostgreSQL", "Sequelize"],
     content: "A back end app for an online store.",
     link: "https://github.com/Alexm415/E-comBackend",
   },

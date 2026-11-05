@@ -19,7 +19,7 @@ function Nav() {
             <li key={l.to}>
               <NavLink
                 to={l.to}
-                className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+                className={({ isActive }) => (`nav-link${l.to === "/resume" ? " nav-cta" : ""}${isActive ? " active" : ""}`)}
               >
                 {l.label}
               </NavLink>

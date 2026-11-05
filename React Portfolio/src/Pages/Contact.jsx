@@ -30,6 +30,7 @@ export default function Contact() {
     <section className="container section narrow">
       <p className="eyebrow">Get in touch</p>
       <h1 className="page-title">Contact me!</h1>
+      <p className="lead">Pick whichever is easiest. Each box opens the page or your email app.</p>
       <ul className="contact-grid" role="list" style={{ listStyle: "none", padding: 0 }}>
         {links.map((l) => {
           const external = !l.href.startsWith("mailto:");

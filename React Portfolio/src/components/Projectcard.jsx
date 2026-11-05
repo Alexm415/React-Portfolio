@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 export function ProjectCard({ project }) {
   return (
     <article className="card">
@@ -11,9 +13,19 @@ export function ProjectCard({ project }) {
         </div>
       )}
       <div className="card-body">
+        <div className="card-meta">
+          {project.kind && <span className="kind">{project.kind}</span>}
+          {project.date && <span className="card-date">{project.date}</span>}
+        </div>
         <h3 className="card-title">{project.title}</h3>
-        {project.date && <p className="card-date">{project.date}</p>}
         <p className="card-text">{project.content}</p>
+        {project.tags && (
+          <ul className="tags" aria-label="Topics">
+            {project.tags.map((t) => (
+              <li key={t}>{t}</li>
+            ))}
+          </ul>
+        )}
         <a href={project.link} className="card-link" target="_blank" rel="noreferrer">
           View on GitHub<span className="visually-hidden">: {project.title}</span>{" "}
           <span aria-hidden="true">→</span>
@@ -23,16 +35,17 @@ export function ProjectCard({ project }) {
   );
 }
 
-export function ProjectGrid({ title, items }) {
+export function ProjectGrid({ title, eyebrow, items }) {
   return (
-    <section className="container section">
+    <Reveal as="section" className="container section">
+      {eyebrow && <p className="eyebrow">{eyebrow}</p>}
       <h2 className="section-title">{title}</h2>
       <div className="grid">
         {items.map((p) => (
           <ProjectCard key={p.link} project={p} />
         ))}
       </div>
-    </section>
+    </Reveal>
   );
 }
 
