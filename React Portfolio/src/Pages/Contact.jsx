@@ -1,54 +1,19 @@
 export default function Contact() {
   return (
-    <main className="container">
-      <div className="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-        <div className="text-center">
-          <form className="form-signin">
-            <h1 className="h3 mb-3 font-weight-normal">Contact me!</h1>
-            <ul>
-              <li>
-                <label for="inputName" className="sr-only">
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="inputName"
-                  placeholder="Your name"
-                  name="nametext"
-                  required
-                />
-              </li>
-              <li>
-                <label for="inputEmail" className="sr-only">
-                  Email address
-                </label>
-                <input
-                  type="email"
-                  id="inputEmail"
-                  placeholder="Email address"
-                  required
-                  autoFocus
-                />
-              </li>
-              <li>
-                <label for="inputMessage" className="sr-only">
-                  Your Message
-                </label>
-                <textarea
-                  type="text"
-                  id="inputMessage"
-                  placeholder="Your Message"
-                  name="nametext"
-                  required
-                />
-              </li>
-              <button class="btn btn-lg btn-primary btn-block" type="submit">
-                Send it
-              </button>
-            </ul>
-          </form>
-        </div>
-      </div>
-    </main>
+    <section className="container section narrow">
+      <p className="eyebrow">Get in touch</p>
+      <h1 className="page-title">Contact me!</h1>
+      <form className="panel form" onSubmit={(e) => e.preventDefault()}>
+        <label htmlFor="inputName">Your Name</label>
+        <input type="text" id="inputName" name="name" placeholder="Your name" required />
+        <label htmlFor="inputEmail">Email address</label>
+        <input type="email" id="inputEmail" name="email" placeholder="Email address" required />
+        <label htmlFor="inputMessage">Your Message</label>
+        <textarea id="inputMessage" name="message" rows="5" placeholder="Your Message" required />
+        <button className="btn btn-primary" type="submit">
+          Send it
+        </button>
+      </form>
+    </section>
   );
 }

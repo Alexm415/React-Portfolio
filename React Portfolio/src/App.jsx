@@ -6,9 +6,14 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
       <Header />
       <Nav />
-      <Outlet />
+      <main id="main" className="page">
+        <Outlet />
+      </main>
       <Footer />
     </>
   );

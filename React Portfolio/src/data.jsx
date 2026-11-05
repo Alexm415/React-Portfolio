@@ -62,4 +62,27 @@ const otherAssignments = [
     link: "https://github.com/Alexm415/NodeReadme",
   },
 ];
-export default { projects, otherAssignments };
+// Additional public repos; descriptions are taken from each repo's README.
+const moreRepos = [
+  {
+    id: 0,
+    title: "Social-Network-API",
+    content:
+      "An API that lets you add users to a MongoDB database and see their thoughts and friends list.",
+    link: "https://github.com/Alexm415/Social-Network-API",
+  },
+  {
+    id: 1,
+    title: "PWA-Text-Editor",
+    content:
+      "A text editor that runs in the browser and can be installed for offline use.",
+    link: "https://github.com/Alexm415/PWA-Text-Editor",
+  },
+  {
+    id: 2,
+    title: "E-comBackend",
+    content: "A back end app for an online store.",
+    link: "https://github.com/Alexm415/E-comBackend",
+  },
+];
+export default { projects, otherAssignments, moreRepos };
