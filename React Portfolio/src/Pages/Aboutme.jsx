@@ -7,6 +7,7 @@ function Aboutme() {
       <div>
         <p className="eyebrow">About Me</p>
         <h1 className="page-title">Hello, my name is Alexander!</h1>
+        <p className="owner-badge">Part business owner of Compupod SF</p>
         <p className="lead">
           Born and raised in San Francisco. I&apos;m currently an operator at
           Compupod. I love developing apps and websites. I&apos;m a highly
@@ -16,6 +17,10 @@ function Aboutme() {
           to continue to learn more languages in this field. I&apos;m a team
           player and also enjoy working until the job is done.
         </p>
+        <p className="lead">I am now a part business owner of Compupod SF.</p>
+        <a className="btn btn-primary" href="mailto:alex@compupodsf.com">
+          <i className="fa-solid fa-envelope" aria-hidden="true"></i> Email me at Compupod SF
+        </a>
       </div>
     </section>
   );

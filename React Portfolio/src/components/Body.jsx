@@ -10,6 +10,7 @@ function Body() {
           Hello, my name is <span className="accent">Alexander</span>
         </h1>
         <p className="lead">I am a full stack developer, from San Francisco. 😎</p>
+        <p className="owner-badge">Part business owner of Compupod SF</p>
         <div className="hero-actions">
           <Link to="/portfolio" className="btn btn-primary">
             View my work
