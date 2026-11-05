@@ -1,4 +1,4 @@
-import me from "../../../images/Hugs.jpeg";
+import me from "../../../images/about-portrait.jpg";
 
 function Aboutme() {
   return (
@@ -18,9 +18,6 @@ function Aboutme() {
           player and also enjoy working until the job is done.
         </p>
         <p className="lead">I am now a part business owner of Compupod SF.</p>
-        <a className="btn btn-primary" href="mailto:alex@compupodsf.com">
-          <i className="fa-solid fa-envelope" aria-hidden="true"></i> Email me at Compupod SF
-        </a>
       </div>
     </section>
   );
