@@ -1,41 +1,32 @@
-const styles = {
-  footer: {
-    padding: "50px",
+const socials = [
+  { href: "https://github.com/Alexm415", icon: "fa-github", label: "GitHub" },
+  {
+    href: "https://www.facebook.com/alex.mena.14203?mibextid=wwXIfr",
+    icon: "fa-facebook",
+    label: "Facebook",
   },
-};
+  {
+    href: "https://www.linkedin.com/in/alexander-mena-morales-724648337?trk=people-guest_people_search-card",
+    icon: "fa-linkedin",
+    label: "LinkedIn",
+  },
+];
+
 export default function Footer() {
   return (
-    <footer
-      style={styles.footer}
-      className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-    >
-      <div className="col-md-4 d-flex align-items-center">
-        <span className="text-muted">Alexander Mena</span>
+    <footer className="site-footer">
+      <div className="container footer-inner">
+        <span>Alexander Mena</span>
+        <ul className="socials">
+          {socials.map((s) => (
+            <li key={s.label}>
+              <a href={s.href} aria-label={s.label} target="_blank" rel="noreferrer">
+                <i className={`fa-brands ${s.icon}`} aria-hidden="true"></i>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
-
-      <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li className="ms-3">
-          <a className="link-dark" href="https://github.com/Alexm415">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li className="ms-3">
-          <a
-            className="link-dark"
-            href="https://www.facebook.com/alex.mena.14203?mibextid=wwXIfr"
-          >
-            <i className="fa-brands fa-facebook"></i>
-          </a>
-        </li>
-        <li className="ms-3">
-          <a
-            className="link-dark"
-            href="https://www.linkedin.com/in/alexander-mena-morales-724648337?trk=people-guest_people_search-card"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
     </footer>
   );
 }

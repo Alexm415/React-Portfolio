@@ -1,54 +1,59 @@
+const links = [
+  {
+    href: "mailto:alex@compupodsf.com",
+    icon: "fa-solid fa-envelope",
+    title: "Compupod SF",
+    sub: "alex@compupodsf.com",
+  },
+  {
+    href: "https://github.com/Alexm415",
+    icon: "fa-brands fa-github",
+    title: "GitHub",
+    sub: "github.com/Alexm415",
+  },
+  {
+    href: "https://www.linkedin.com/in/alexander-mena-morales-724648337?trk=people-guest_people_search-card",
+    icon: "fa-brands fa-linkedin",
+    title: "LinkedIn",
+    sub: "Alexander Mena Morales",
+  },
+  {
+    href: "https://www.facebook.com/alex.mena.14203?mibextid=wwXIfr",
+    icon: "fa-brands fa-facebook",
+    title: "Facebook",
+    sub: "Alex Mena",
+  },
+];
+
 export default function Contact() {
   return (
-    <main className="container">
-      <div className="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-        <div className="text-center">
-          <form className="form-signin">
-            <h1 className="h3 mb-3 font-weight-normal">Contact me!</h1>
-            <ul>
-              <li>
-                <label for="inputName" className="sr-only">
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="inputName"
-                  placeholder="Your name"
-                  name="nametext"
-                  required
-                />
-              </li>
-              <li>
-                <label for="inputEmail" className="sr-only">
-                  Email address
-                </label>
-                <input
-                  type="email"
-                  id="inputEmail"
-                  placeholder="Email address"
-                  required
-                  autoFocus
-                />
-              </li>
-              <li>
-                <label for="inputMessage" className="sr-only">
-                  Your Message
-                </label>
-                <textarea
-                  type="text"
-                  id="inputMessage"
-                  placeholder="Your Message"
-                  name="nametext"
-                  required
-                />
-              </li>
-              <button class="btn btn-lg btn-primary btn-block" type="submit">
-                Send it
-              </button>
-            </ul>
-          </form>
-        </div>
-      </div>
-    </main>
+    <section className="container section narrow">
+      <p className="eyebrow">Get in touch</p>
+      <h1 className="page-title">Contact me!</h1>
+      <p className="lead">Pick whichever is easiest. Each box opens the page or your email app.</p>
+      <ul className="contact-grid" role="list" style={{ listStyle: "none", padding: 0 }}>
+        {links.map((l) => {
+          const external = !l.href.startsWith("mailto:");
+          return (
+            <li key={l.title}>
+              <a
+                className="contact-card"
+                href={l.href}
+                {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
+              >
+                <span className="contact-icon" aria-hidden="true">
+                  <i className={l.icon}></i>
+                </span>
+                <span>
+                  <strong>{l.title}</strong>
+                  <span className="sub">{l.sub}</span>
+                </span>
+                <span className="arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
   );
 }
