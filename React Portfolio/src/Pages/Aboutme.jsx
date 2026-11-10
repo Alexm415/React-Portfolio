@@ -1,43 +1,48 @@
-import me from "../../../images/Hugs.jpeg";
-const styles = {
-  pic: {
-    width: 350,
-    height: 500,
-    borderRadius: 100,
-  },
-};
+import me from "../../../images/about-portrait.jpg";
+import CtaBand from "../components/CtaBand";
+
+const facts = [
+  { label: "Role", value: "Full stack developer" },
+  { label: "Business", value: "Part business owner, Compupod SF" },
+  { label: "Based in", value: "San Francisco" },
+  { label: "Works with", value: "HTML, CSS, JavaScript, Node.js, React" },
+];
+
 function Aboutme() {
   return (
-    <main className="container">
-      <div className="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-        <div className="row featurette">
-          <div className="col-md-7 order-md-2">
-            <h2 className="featurette-heading">
-              Hello, my name is Alexander !
-            </h2>
-            <p className="lead">
-              Born and raised in San Francisco. I'm currently an operator at
-              Compupod. I love developing apps and websites. I'm a highly
-              motivated individual with a great understanding of both Front end
-              development and Back end development. The languages I've worked
-              with are HTML, CSS, JavaScript, NodeJs, React and more. I am
-              wanting to continue to learn more languages in this field. I'm a
-              team player and also enjoy working until the job is done.
-            </p>
-          </div>
-          <div className="col-md-5 order-md-1">
-            <img
-              className="featurette-image img-fluid mx-auto"
-              data-src="holder.js/500x500/auto"
-              alt="500x500"
-              style={styles.pic}
-              src={me}
-              data-holder-rendered="true"
-            />
-          </div>
+    <>
+      <section className="container section about">
+        <div className="about-frame">
+          <img className="about-img" alt="Alexander Mena" src={me} width="1600" height="1200" />
         </div>
-      </div>
-    </main>
+        <div>
+          <p className="eyebrow">About Me</p>
+          <h1 className="page-title">Hello, my name is Alexander!</h1>
+          <p className="owner-badge">
+            <span className="dot" aria-hidden="true"></span> Part business owner of Compupod SF
+          </p>
+          <p className="lead">
+            Born and raised in San Francisco. I&apos;m currently an operator at
+            Compupod. I love developing apps and websites. I&apos;m a highly
+            motivated individual with a great understanding of both Front end
+            development and Back end development. The languages I&apos;ve worked
+            with are HTML, CSS, JavaScript, NodeJs, React and more. I am wanting
+            to continue to learn more languages in this field. I&apos;m a team
+            player and also enjoy working until the job is done.
+          </p>
+          <p className="lead">I am now a part business owner of Compupod SF.</p>
+          <dl className="facts">
+            {facts.map((f) => (
+              <div key={f.label}>
+                <dt>{f.label}</dt>
+                <dd>{f.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+      <CtaBand />
+    </>
   );
 }
 export default Aboutme;

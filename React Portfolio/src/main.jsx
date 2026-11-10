@@ -1,4 +1,5 @@
 import App from "./App.jsx";
+import "./assets/card.css";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Aboutme from "./Pages/Aboutme.jsx";

@@ -1,38 +1,26 @@
 import resumePdf from "../../../Pdf/Resume.pdf";
+
+const frontend = ["HTML", "CSS", "JavaScript", "jQuery", "Handlebars", "Bootstrap", "React"];
+const backend = ["NodeJs", "Express Server", "mySql", "PostgreSQL", "MongoDb", "GraphQl"];
+
 export default function Resume() {
   return (
-    <main className="container">
-      <div className="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-        <div class="columns download">
-          <p>
-            <a href={resumePdf} className="button">
-              <i className="fa fa-download"></i>Download My Resume
-            </a>
-          </p>
-
-          <div>
-            <h2>Frontend Tech</h2>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>jQueriy</li>
-              <li>Handlebars</li>
-              <li>Bootstap</li>
-              <li>React</li>
-            </ul>
-            <h2>Backend Tech</h2>
-            <ul>
-              <li>NodeJs</li>
-              <li>Express Server</li>
-              <li>mySql</li>
-              <li>PostSQL</li>
-              <li>MongoDb</li>
-              <li>GraphQl</li>
-            </ul>
-          </div>
+    <section className="container section narrow">
+      <p className="eyebrow">Resume</p>
+      <h1 className="page-title">Skills &amp; Experience</h1>
+      <a href={resumePdf} className="btn btn-primary" download>
+        <i className="fa fa-download" aria-hidden="true"></i> Download My Resume
+      </a>
+      <div className="skills">
+        <div className="panel">
+          <h2>Frontend Tech</h2>
+          <ul className="chips">{frontend.map((s) => <li key={s}>{s}</li>)}</ul>
+        </div>
+        <div className="panel">
+          <h2>Backend Tech</h2>
+          <ul className="chips">{backend.map((s) => <li key={s}>{s}</li>)}</ul>
         </div>
       </div>
-    </main>
+    </section>
   );
 }
