@@ -1,3 +1,12 @@
+import featuredDesktop from "./assets/blendz/live-desktop.webp";
+import featuredMobile from "./assets/blendz/live-mobile.webp";
+import cutTaper from "./assets/blendz/taper-fade-line-up.webp";
+import cutMullet from "./assets/blendz/drop-fade-mullet.webp";
+import cutHighTaper from "./assets/blendz/high-taper.webp";
+import cutBurst from "./assets/blendz/burst-fade.webp";
+import clipPoster from "./assets/blendz/taper-sponge-curls-poster.jpg";
+import clipMp4 from "./assets/blendz/taper-sponge-curls.mp4";
+import clipWebm from "./assets/blendz/taper-sponge-curls.webm";
 import img0 from "../../images/Front-images/4.jpeg";
 import img1 from "../../images/Front-images/1.jpeg";
 import img2 from "../../images/Front-images/2.jpeg";
@@ -103,4 +112,34 @@ const moreRepos = [
     link: "https://github.com/Alexm415/E-comBackend",
   },
 ];
-export default { projects, otherAssignments, moreRepos };
+
+const featuredProject = {
+  title: "Blendzwitdom",
+  kicker: "A barber portfolio for Dominic Mena, a Hayward barber.",
+  kind: "Featured",
+  date: "Nov 2026",
+  tags: ["React", "Vite", "CSS", "GitHub Pages"],
+  content:
+    "A responsive React + Vite site I built for my brother, Dominic Mena. It has a services and prices menu, a haircut photo gallery, looping video reveals, Booksy reviews (4.9★ from 66 reviews), hours and location, and Book Now buttons that go to Booksy. It is deployed on GitHub Pages.",
+  live: "https://alexm415.github.io/Blendzwithdom/",
+  code: "https://github.com/Alexm415/Blendzwithdom",
+  book: "https://booksy.com/en-us/971232_blendedbydom_barber-shop_119449_hayward",
+  desktop: featuredDesktop,
+  mobile: featuredMobile,
+  gallery: [
+    { src: cutTaper, caption: "Taper fade + line-up", alt: "Taper fade and line-up haircut" },
+    { src: cutMullet, caption: "Drop fade mullet", alt: "Drop fade mullet haircut" },
+    { src: cutHighTaper, caption: "High taper", alt: "High taper haircut" },
+    { src: cutBurst, caption: "Burst fade", alt: "Burst fade haircut" },
+  ],
+  videos: [
+    {
+      mp4: clipMp4,
+      webm: clipWebm,
+      poster: clipPoster,
+      caption: "Taper + sponge curls",
+      alt: "Video of a taper fade with a sponge-curl top and sharp line-up",
+    },
+  ],
+};
+export default { featuredProject, projects, otherAssignments, moreRepos };

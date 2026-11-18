@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Body from "../components/Body";
 import { ProjectCard } from "../components/Projectcard";
+import FeaturedProject from "../components/FeaturedProject";
 import Reveal from "../components/Reveal";
 import CtaBand from "../components/CtaBand";
 import data from "../data";
@@ -52,7 +53,8 @@ export default function Home() {
             View all projects <span aria-hidden="true">→</span>
           </Link>
         </div>
-        <div className="grid">
+        <FeaturedProject project={data.featuredProject} headingLevel={3} />
+        <div className="grid featured-more">
           {data.projects.slice(0, 3).map((p) => (
             <ProjectCard key={p.link} project={p} />
           ))}
