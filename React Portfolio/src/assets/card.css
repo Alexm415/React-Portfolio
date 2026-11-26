@@ -207,6 +207,7 @@ h1, .page-title, .section-title, .cta-title { font-family: var(--font-display); 
 
 
 /* Featured project (Blendzwitdom) */
+.featured-card + .featured-card { margin-top: 2rem; }
 .featured-card {
   background: var(--surface);
   border: 1px solid var(--border);
