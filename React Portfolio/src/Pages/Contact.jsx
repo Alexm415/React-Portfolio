@@ -1,9 +1,9 @@
 const links = [
   {
-    href: "mailto:alex@compupodsf.com",
+    href: "mailto:mena.alex5@gmail.com",
     icon: "fa-solid fa-envelope",
-    title: "Compupod SF",
-    sub: "alex@compupodsf.com",
+    title: "Email",
+    sub: "mena.alex5@gmail.com",
   },
   {
     href: "https://github.com/Alexm415",
