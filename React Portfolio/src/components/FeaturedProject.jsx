@@ -78,7 +78,7 @@ export default function FeaturedProject({ project, headingLevel = 2 }) {
             {project.kind && <span className="kind">{project.kind}</span>}
             {project.date && <span className="card-date">{project.date}</span>}
           </div>
-          <Title id="featured-title" className="section-title featured-title">
+          <Title id={project.titleId || "featured-title"} className="section-title featured-title">
             {project.title}
           </Title>
           {project.kicker && <p className="featured-kicker">{project.kicker}</p>}
@@ -107,50 +107,54 @@ export default function FeaturedProject({ project, headingLevel = 2 }) {
             >
               View code
             </a>
-            <a
-              className="btn btn-ghost"
-              href={project.book}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Book Now
-            </a>
+            {project.book && (
+              <a
+                className="btn btn-ghost"
+                href={project.book}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Book Now
+              </a>
+            )}
           </div>
         </div>
         <div className="featured-shots">
           <img
             className="featured-desktop"
             src={project.desktop}
-            alt="Blendzwitdom homepage on desktop"
-            width="1366"
-            height="768"
+            alt={project.desktopAlt || "Blendzwitdom homepage on desktop"}
+            width={project.desktopWidth || 1366}
+            height={project.desktopHeight || 768}
           />
           {project.mobile && (
             <img
               className="featured-mobile"
               src={project.mobile}
-              alt="Blendzwitdom homepage on a phone"
-              width="780"
-              height="1688"
+              alt={project.mobileAlt || "Blendzwitdom homepage on a phone"}
+              width={project.mobileWidth || 780}
+              height={project.mobileHeight || 1688}
             />
           )}
         </div>
       </div>
-      <div className="featured-cuts">
-        {project.gallery.map((shot) => (
-          <figure className="featured-cut" key={shot.caption}>
-            <img src={shot.src} alt={shot.alt} loading="lazy" />
-            <figcaption>{shot.caption}</figcaption>
-          </figure>
-        ))}
-        {project.videos.map((video) => (
-          <LoopClip
-            key={video.caption}
-            video={video}
-            reducedMotion={reducedMotion}
-          />
-        ))}
-      </div>
+      {(project.gallery?.length > 0 || project.videos?.length > 0) && (
+        <div className="featured-cuts">
+          {(project.gallery || []).map((shot) => (
+            <figure className="featured-cut" key={shot.caption}>
+              <img src={shot.src} alt={shot.alt} loading="lazy" />
+              <figcaption>{shot.caption}</figcaption>
+            </figure>
+          ))}
+          {(project.videos || []).map((video) => (
+            <LoopClip
+              key={video.caption}
+              video={video}
+              reducedMotion={reducedMotion}
+            />
+          ))}
+        </div>
+      )}
     </Reveal>
   );
 }

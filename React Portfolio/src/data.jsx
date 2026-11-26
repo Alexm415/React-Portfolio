@@ -1,4 +1,6 @@
 import featuredDesktop from "./assets/blendz/live-desktop.webp";
+import roofingDesktop from "./assets/roofing/live-desktop.webp";
+import roofingMobile from "./assets/roofing/live-mobile.webp";
 import featuredMobile from "./assets/blendz/live-mobile.webp";
 import cutTaper from "./assets/blendz/taper-fade-line-up.webp";
 import cutMullet from "./assets/blendz/drop-fade-mullet.webp";
@@ -142,4 +144,27 @@ const featuredProject = {
     },
   ],
 };
-export default { featuredProject, projects, otherAssignments, moreRepos };
+
+const roofingProject = {
+  title: "Roofing Knights",
+  titleId: "roofing-knights-title",
+  kicker: "A bilingual site for a licensed Los Angeles roofing contractor.",
+  kind: "Featured",
+  date: "Nov 2026",
+  tags: ["React", "Vite", "CSS", "Bilingual", "GitHub Pages"],
+  content:
+    "A bilingual EN/ES multi-page site for a licensed LA roofing contractor, with an insurance-claim consultation offer, tap-to-call/WhatsApp, and verified BBB/CSLB trust info.",
+  live: "https://alexm415.github.io/RoofingKnights/",
+  code: "https://github.com/Alexm415/RoofingKnights",
+  desktop: roofingDesktop,
+  mobile: roofingMobile,
+  desktopAlt: "Roofing Knights homepage on desktop",
+  mobileAlt: "Roofing Knights homepage on a phone",
+  desktopWidth: 1366,
+  desktopHeight: 900,
+  mobileWidth: 390,
+  mobileHeight: 844,
+};
+
+export default { featuredProject, roofingProject, projects, otherAssignments, moreRepos };
+

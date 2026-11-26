@@ -18,6 +18,7 @@ export default function Portfolio() {
       <Reveal as="section" className="container section" aria-labelledby="featured-title">
         <p className="eyebrow">Featured</p>
         <FeaturedProject project={data.featuredProject} />
+        <FeaturedProject project={data.roofingProject} />
       </Reveal>
       <ProjectGrid eyebrow="01" title="Projects" items={data.projects} />
       <ProjectGrid eyebrow="02" title="Other Assignments" items={data.otherAssignments} />

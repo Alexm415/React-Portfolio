@@ -54,6 +54,7 @@ export default function Home() {
           </Link>
         </div>
         <FeaturedProject project={data.featuredProject} headingLevel={3} />
+        <FeaturedProject project={data.roofingProject} headingLevel={3} />
         <div className="grid featured-more">
           {data.projects.slice(0, 3).map((p) => (
             <ProjectCard key={p.link} project={p} />
