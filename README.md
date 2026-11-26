@@ -6,7 +6,7 @@ This is my new React portfolio, here i show all the cool and amazing thing i can
 
 ## Table of Contents
 
-[Description](#Description) [Installation](#installation) [Credits](#credits) [License](#license) [Usage](#usage) [Images](#Images) [Questions](#questions) [Github](#github) [Links](#links)
+[Description](#Description) [Installation](#installation) [Credits](#credits) [License](#license) [Usage](#usage) [Featured work](#featured-work) [Images](#Images) [Questions](#questions) [Github](#github) [Links](#links)
 
 ## Installation
 
@@ -20,9 +20,21 @@ Office hours, xpertlearning assistant
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Featured work
+
+**[Blendzwitdom](https://alexm415.github.io/Blendzwithdom/)** — A responsive React + Vite barber portfolio for Dominic Mena, a Hayward barber. [Live site](https://alexm415.github.io/Blendzwithdom/) · [Code](https://github.com/Alexm415/Blendzwithdom)
+
+**[Roofing Knights](https://alexm415.github.io/RoofingKnights/)** — A bilingual EN/ES multi-page site for a licensed LA roofing contractor, with an insurance-claim consultation offer, tap-to-call/WhatsApp, and verified BBB/CSLB trust info. [Live site](https://alexm415.github.io/RoofingKnights/) · [Code](https://github.com/Alexm415/RoofingKnights)
+
 ## Images
 
-![alt text](./images/Screenshot%202025-01-27%20at%206.22.20 PM.png)
+Desktop preview of the current portfolio, including the Blendzwitdom and Roofing Knights featured blocks:
+
+![Portfolio desktop preview](./images/portfolio-desktop.webp)
+
+Mobile preview:
+
+![Portfolio mobile preview](./images/portfolio-mobile.webp)
 
 ## Usage
 
@@ -30,7 +42,7 @@ To display my work!😎
 
 ## Questions
 
-Alex5.mena@gmail.com
+mena.alex5@gmail.com
 
 ## Github
 
